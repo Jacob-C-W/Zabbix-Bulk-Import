@@ -1,8 +1,18 @@
 # Function for connecting to the Zabbix API.
 
 # import necessary libraries if needed
-from zabbix_env import zabbix_token, zabbix_url, zabbix_version
+from zabbix_env import zabbix_url, zabbix_version #, zabbix_token
 from zabbix_utils import ZabbixAPI
+import getpass
+
+
+def prompt_for_token():
+        print("[AUTH] Enter your Zabbix Token:", flush=True)
+        api_token= getpass.getpass()
+        if not api_token: 
+             print("[FAIL] No token provided.", flush=True)
+             return None
+        return api_token
 
 #Zabbix API login function
 def zabbix_login():

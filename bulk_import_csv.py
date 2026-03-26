@@ -10,8 +10,8 @@ from zabbix_utils import ZabbixAPI
 from zabbix_hostcreate import zabbix_hostcreate
 
 # CSV file and config
-CSV_FILENAME = "bulk_import.csv"  # fixed name, same directory
-MAX_CREATE = 100  # only create 2 for testing
+CSV_FILENAME = "bulk_import.csv"  # Fixed name, same directory
+MAX_CREATE = 100  # Only create 2 for testing
 
 def main() -> None:
     print("[BOOT] Bulk prompt import started.", flush=True)
