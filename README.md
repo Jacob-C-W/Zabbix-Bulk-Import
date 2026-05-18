@@ -1,6 +1,6 @@
 # Zabbix Bulk Import Script
 
-I made this script to automate adding devices to Zabbix in bulk, quick and efficiently. My requiurements were to add several hundred devices of the same device to the platform monitored by SNMPv3. 
+I made this script to automate adding devices to Zabbix in bulk, quick and efficiently. My requirements were to add several hundred devices of the same device to the platform monitored by SNMPv3. 
 
 
 # Building the Enviorment
